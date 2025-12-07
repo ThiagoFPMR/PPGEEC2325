@@ -1,0 +1,4 @@
+gensim
+streamlit
+scikit-learn
+numpy

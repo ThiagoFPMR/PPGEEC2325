@@ -47,10 +47,10 @@ def get_clusters(word_list, model, threshold):
 
 # --- 3. Streamlit Interface ---
 st.title("Demonstração de Agrupamento de Palavras com Word2Vec do Google")
-st.write("Usa o modelo `word2vec-google-news-300` para agrupar palavras. O modelo foi treinado em notícias do Google em inglês.")
+st.write("Usa um modelo word2vec para agrupar palavras. O modelo foi treinado em cima do dataset text8, criado a partir de um dump da Wikipedia em inglês de 2006. Esse modelo foi usado no lugar do original para caber no streamlit.")
 
 # Load model with a loading spinner
-with st.spinner("Carregando Google Word2Vec Model (1.6GB)... isso pode levar um tempo"):
+with st.spinner("Carregando modelo..."):
     try:
         model = load_word2vec()
     except Exception as e:

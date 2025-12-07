@@ -46,7 +46,7 @@ def get_clusters(word_list, model, threshold):
     return groups, missing
 
 # --- 3. Streamlit Interface ---
-st.title("Demonstração de Agrupamento de Palavras com Word2Vec do Google")
+st.title("Demonstração de Agrupamento de Palavras com Word2Vec")
 st.write("Usa um modelo word2vec para agrupar palavras. O modelo foi treinado em cima do dataset text8, criado a partir de um dump da Wikipedia em inglês de 2006. Esse modelo foi usado no lugar do original para hostear no streamlit.")
 
 # Load model with a loading spinner
